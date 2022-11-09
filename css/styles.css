@@ -1,0 +1,192 @@
+:root {
+    --main-bgcolor: #2F303A;
+    --main-white-bgcolor: white;
+    --secondary-white-bgcolor: #F5F4FA;
+
+    --black-text-color: #212121;
+    --white-text-color: #ffffff;
+    --accent-color: #2196F3;
+    --primary-text-color: #757575;
+
+    --logo-black-color: #000000;
+}
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; 
+*/
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--main-white-bgcolor);
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--black-text-color);
+}
+
+.link {
+    color: var(--primary-text-color);
+
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+
+
+/* header */
+
+.logo {
+    color: var(--logo-black-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.logo:hover,
+.logo:focus {
+    background-color: var(--secondary-white-bgcolor);
+}
+
+.nav-list a {
+    color: var(--black-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: var(--accent-color);
+}
+
+
+.contacts-list a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.contacts-list a:hover,
+.contacts-list a:focus {
+    color: var(--accent-color);
+}
+
+/* banner section */
+
+.banner {
+    background-color: var(--main-bgcolor);
+}
+
+h1 {
+    color: var(--white-text-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+}
+
+.btn {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--accent-color);
+    background-color: var(--white-text-color);
+}
+
+/* pluses section */
+
+.pluses-list h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.pluses-list p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* what we do / service */
+
+.service h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* team section */
+
+.team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.team-list > li {
+    width: 270px;
+}
+
+.team-list h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-list p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--main-bgcolor);
+}
+
+address {
+    color: var(--white-text-color);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.footer-list a {
+    font-weight: 400;
+    line-height: 1.71;
+}
