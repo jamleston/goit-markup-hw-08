@@ -34,8 +34,6 @@ h6 {
 }
 
 .link {
-    color: var(--primary-text-color);
-
     text-decoration: none;
 }
 
@@ -60,21 +58,24 @@ h6 {
     color: var(--accent-color);
 }
 
-.logo:hover,
-.logo:focus {
-    background-color: var(--secondary-white-bgcolor);
-}
-
-.nav-list a {
+.nav-list a,
+.contacts-list a {
     color: var(--black-text-color);
 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts-list a {
+    color: var(--primary-text-color);
 }
 
 .nav-list a:hover,
-.nav-list a:focus {
+.nav-list a:focus,
+.contacts-list a:hover,
+.contacts-list a:focus {
     color: var(--accent-color);
 }
 
@@ -83,16 +84,6 @@ h6 {
 }
 
 
-.contacts-list a {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.contacts-list a:hover,
-.contacts-list a:focus {
-    color: var(--accent-color);
-}
 
 /* main page */
 
@@ -108,6 +99,7 @@ h6 {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
 
     text-align: center;
 }
@@ -119,6 +111,7 @@ h6 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
 
     cursor: pointer;
 }
@@ -192,6 +185,8 @@ h6 {
 
     font-weight: 500;
     line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .examples .btn:hover,
@@ -207,6 +202,7 @@ h6 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .gallery p {
