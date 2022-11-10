@@ -139,7 +139,6 @@ h6 {
 }
 
 .pluses-list p {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -150,6 +149,7 @@ h6 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+
     text-align: center;
 }
 
@@ -159,6 +159,7 @@ h6 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+
     text-align: center;
 }
 
@@ -170,13 +171,14 @@ h6 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+
     text-align: center;
 }
 
 .team-list p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
+
     text-align: center;
 }
 
@@ -208,7 +210,6 @@ h6 {
 }
 
 .gallery p {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
 }
@@ -223,12 +224,10 @@ address {
     color: var(--white-text-color);
 
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
 
 .footer-list a {
-    font-weight: 400;
     line-height: 1.71;
 }
