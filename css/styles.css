@@ -78,6 +78,10 @@ h6 {
     color: var(--accent-color);
 }
 
+.link.current {
+    color: var(--accent-color);
+}
+
 
 .contacts-list a {
     font-weight: 500;
@@ -90,13 +94,15 @@ h6 {
     color: var(--accent-color);
 }
 
+/* main page */
+
 /* banner section */
 
 .banner {
     background-color: var(--main-bgcolor);
 }
 
-h1 {
+.banner h1 {
     color: var(--white-text-color);
 
     font-weight: 900;
@@ -113,7 +119,10 @@ h1 {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
+
+    cursor: pointer;
 }
+
 
 .btn:hover,
 .btn:focus {
@@ -169,6 +178,39 @@ h1 {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+/* portfolio page */
+
+/* filter */
+
+.examples .btn {
+    color: var(--black-text-color);
+    background-color: var(--secondary-white-bgcolor);
+
+    font-weight: 500;
+    line-height: 1.63;
+}
+
+.examples .btn:hover,
+.examples .btn:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+/* gallery */
+
+
+.gallery h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.gallery p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* footer */
