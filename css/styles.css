@@ -149,6 +149,10 @@ h6 {
 
 /* team section */
 
+.team {
+    background-color: var(--secondary-white-bgcolor);
+}
+
 .team h2 {
     font-weight: 700;
     font-size: 36px;
