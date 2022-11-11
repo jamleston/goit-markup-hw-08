@@ -41,6 +41,11 @@ h6 {
     list-style: none;
 }
 
+button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
 
 
 /* header */
@@ -58,8 +63,8 @@ h6 {
     color: var(--accent-color);
 }
 
-.nav-list a,
-.contacts-list a {
+.nav-list-link,
+.header-contacts-list-link {
     color: var(--black-text-color);
 
     font-weight: 500;
@@ -68,14 +73,14 @@ h6 {
     letter-spacing: 0.02em;
 }
 
-.contacts-list a {
+.header-contacts-list-link {
     color: var(--primary-text-color);
 }
 
-.nav-list a:hover,
-.nav-list a:focus,
-.contacts-list a:hover,
-.contacts-list a:focus {
+.nav-list-link:hover,
+.nav-list-link:focus,
+.header-contacts-list-link:hover,
+.header-contacts-list-link:focus {
     color: var(--accent-color);
 }
 
@@ -93,7 +98,7 @@ h6 {
     background-color: var(--main-bgcolor);
 }
 
-.banner h1 {
+.banner-title {
     color: var(--white-text-color);
 
     font-weight: 900;
@@ -104,7 +109,7 @@ h6 {
     text-align: center;
 }
 
-.btn {
+.banner-btn {
     color: var(--white-text-color);
     background-color: var(--accent-color);
 
@@ -113,34 +118,30 @@ h6 {
     line-height: 1.88;
     letter-spacing: 0.06em;
     text-align: center;
-
-    cursor: pointer;
 }
 
 
-.btn:hover,
-.btn:focus {
+.banner-btn:hover,
+.banner-btn:focus {
     color: var(--accent-color);
     background-color: var(--white-text-color);
 }
 
 /* pluses section */
 
-.pluses-list h3 {
-    font-weight: 700;
+.pluses-list-title {
     font-size: 14px;
     line-height: 1.14;
 }
 
-.pluses-list p {
+.pluses-list-description {
     font-size: 14px;
     line-height: 1.71;
 }
 
 /* what we do / service */
 
-.service h2 {
-    font-weight: 700;
+.service-title {
     font-size: 36px;
     line-height: 1.17;
 
@@ -153,19 +154,18 @@ h6 {
     background-color: var(--secondary-white-bgcolor);
 }
 
-.team h2 {
-    font-weight: 700;
+.team-title {
     font-size: 36px;
     line-height: 1.17;
 
     text-align: center;
 }
 
-.team-list > li {
+.team-list-item {
     width: 270px;
 }
 
-.team-list h3 {
+.team-list-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -173,7 +173,7 @@ h6 {
     text-align: center;
 }
 
-.team-list p {
+.team-list-description {
     font-size: 16px;
     line-height: 1.19;
 
@@ -184,7 +184,7 @@ h6 {
 
 /* filter */
 
-.examples .btn {
+.examples-btn {
     color: var(--black-text-color);
     background-color: var(--secondary-white-bgcolor);
 
@@ -194,8 +194,9 @@ h6 {
     letter-spacing: 0.03em;
 }
 
-.examples .btn:hover,
-.examples .btn:focus {
+
+.examples-btn:hover,
+.examples-btn:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
 }
@@ -203,14 +204,15 @@ h6 {
 /* gallery */
 
 
-.gallery h3 {
-    font-weight: 700;
+.gallery-item-title {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.gallery p {
+.gallery-item-description {
+    color: var(--primary-text-color);
+
     font-size: 16px;
     line-height: 1.88;
 }
@@ -221,7 +223,11 @@ footer {
     background-color: var(--main-bgcolor);
 }
 
-address {
+.footer-logo {
+    color: var(--white-text-color);
+}
+
+.footer-address {
     color: var(--white-text-color);
 
     font-style: normal;
@@ -229,6 +235,14 @@ address {
     line-height: 1.71;
 }
 
-.footer-list a {
+.footer-contacts-list-link {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
     line-height: 1.71;
+}
+
+.footer-contacts-list-link:hover,
+.footer-contacts-list-link:focus {
+    color: var(--accent-color);
 }
