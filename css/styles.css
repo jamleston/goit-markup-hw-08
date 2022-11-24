@@ -413,6 +413,10 @@ button {
     display: flex;
 }
 
+.clients-item {
+    
+}
+
 .clients-link {
     display: flex;
     justify-content: center;
