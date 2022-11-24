@@ -91,10 +91,25 @@ button {
     padding-bottom: 94px;
 }
 
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 /* header */
 
 .page-header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -154,7 +169,17 @@ button {
 
 .header-contacts-list-link {
     color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+
+    color: var(--primary-text-color);
 }
+
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 
 .nav-list-link:hover,
 .nav-list-link:focus,
@@ -167,14 +192,19 @@ button {
     color: var(--accent-color);
 }
 
-
-
-
 /* main page */
 
 /* banner section */
 
 .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--main-bgcolor);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -231,9 +261,6 @@ button {
     padding-bottom: 0;
 }
 
-.pluses-title {
-    visibility: hidden;
-}
 
 .pluses-list {
     display: flex;
@@ -245,6 +272,18 @@ button {
 
 .pluses-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.bg-svg {
+    background-color: var(--secondary-white-bgcolor);
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .pluses-list-title {
@@ -327,6 +366,79 @@ button {
     line-height: 1.19;
 
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-socmedias-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-socmedias-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-socmedias-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: #AFB1B8;
+}
+
+
+.team-socmedias-icon {
+    fill: currentColor;
+}
+
+.team-socmedias-link:hover,
+.team-socmedias-link:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+/* clients */
+
+.clients-title {
+    font-size: 36px;
+    line-height: 1.17;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.clients-list {
+    display: flex;
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    color: #AFB1B8;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-icon  {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 /* portfolio page */
@@ -446,9 +558,4 @@ footer {
 
     font-size: 14px;
     line-height: 1.71;
-}
-
-.footer-contacts-list-link:hover,
-.footer-contacts-list-link:focus {
-    color: var(--accent-color);
 }
