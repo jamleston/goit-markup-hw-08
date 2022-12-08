@@ -337,14 +337,56 @@
             </div>
         </div>
     </footer>
+    <!-- modal -->
     <div class="modal-backdrop is-hidden" data-modal>
         <div class="modal-window">
-            
             <button type="button" class="modal-close-btn" data-modal-close>
                 <svg class="close-img" width="11px" height="11px">
                     <use href="./img/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="modal-form">
+                <div class="form-input">
+                    <input id='name' type="text" class="form-input-field" placeholder=" ">
+                    <label for="name" class="form-label" >Ім'я</label>
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="./img/sprite.svg#icon-modal-person"></use>
+                    </svg>
+                </div>
+                <div class="form-input">
+                    <input id='tel' type="tel" class="form-input-field" placeholder=" ">
+                    <label for="tel" class="form-label" >Телефон</label>
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="./img/sprite.svg#icon-modal-phone"></use>
+                    </svg>
+                </div>
+                <div class="form-input">
+                    <input id='name' type="mail" class="form-input-field" placeholder=" ">
+                    <label for="name" class="form-label" >Пошта</label>
+                    <svg class="modal-icon" width="18px" height="18px">
+                        <use href="./img/sprite.svg#icon-modal-envelope"></use>
+                    </svg>
+                </div>
+                <div class="form-input textarea">
+                    <textarea class="form-input-field" placeholder="Введіть текст"></textarea>
+                    <label for="textarea" class="form-label" >Коментар</label>
+                </div>
+                <div class="modal-center-wrapper">
+                    <div class="modal-checkbox">
+                        <input type="checkbox" class="modal-checkbox-input" id="agree">
+                        <label for="agree" class="modal-checkbox-label">
+                            <span class="icon-checkbox">
+                                <svg width="16px" height="15px">
+                                    <use href="./img/sprite.svg#icon-checked"></use>
+                                </svg>
+                            </span>
+                            <p class="modal-checkbox-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></p>
+                        </label>
+                    </div>
+                    <button type="submit" class="modal-button">Відправити</button>
+                </div>
+            </form>
         </div>
     </div>
     <script src="./scripts/modal.js"></script>
