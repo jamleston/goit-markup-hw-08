@@ -334,6 +334,20 @@
                         </a></li>
                     </ul>
                 </div>
+                <div class="footer-form">
+                    <p class="footer-form-text">Підпишіться на розсилку</p>
+                    <form class="footer-form-wrapper">
+                        <label for="email" class="footer-form-label">
+                            <input id="email" type="text" name="email" class="footer-form-field" placeholder="E-mail">
+                        </label>
+                        <button type="submit" class="footer-form-btn link">
+                            Підписатися
+                            <svg width="24px" height="24px" class="footer-btn-icon">
+                                <use href="./img/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -348,21 +362,21 @@
             <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
             <form class="modal-form">
                 <div class="form-input">
-                    <input id='name' type="text" class="form-input-field" placeholder=" ">
+                    <input id='name' name="username" type="text" class="form-input-field" placeholder=" ">
                     <label for="name" class="form-label" >Ім'я</label>
                     <svg class="modal-icon" width="18px" height="18px">
                         <use href="./img/sprite.svg#icon-modal-person"></use>
                     </svg>
                 </div>
                 <div class="form-input">
-                    <input id='tel' type="tel" class="form-input-field" placeholder=" ">
+                    <input id='tel' name="tel" type="tel" class="form-input-field" placeholder=" ">
                     <label for="tel" class="form-label" >Телефон</label>
                     <svg class="modal-icon" width="18px" height="18px">
                         <use href="./img/sprite.svg#icon-modal-phone"></use>
                     </svg>
                 </div>
                 <div class="form-input">
-                    <input id='name' type="mail" class="form-input-field" placeholder=" ">
+                    <input id='name' name="email" type="mail" class="form-input-field" placeholder=" ">
                     <label for="name" class="form-label" >Пошта</label>
                     <svg class="modal-icon" width="18px" height="18px">
                         <use href="./img/sprite.svg#icon-modal-envelope"></use>
@@ -374,7 +388,7 @@
                 </div>
                 <div class="modal-center-wrapper">
                     <div class="modal-checkbox">
-                        <input type="checkbox" class="modal-checkbox-input" id="agree">
+                        <input type="checkbox" name="policy" class="modal-checkbox-input" id="agree">
                         <label for="agree" class="modal-checkbox-label">
                             <span class="icon-checkbox">
                                 <svg width="16px" height="15px">
