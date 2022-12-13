@@ -1,0 +1,34 @@
+.contacts {
+    @extend %list;
+    display: flex;
+    margin-left: auto;
+
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
+}
+
+.contacts__link {
+    @extend %link;
+    color: $text-main;
+    
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color $time-standard $cubic-standard;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
+}

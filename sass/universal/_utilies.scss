@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: $text-main;
+    background-color: $bg-main-white;
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $text-black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+img {
+    display: block;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

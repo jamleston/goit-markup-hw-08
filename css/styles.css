@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --main-bgcolor: #2F303A;
     --main-white-bgcolor: white;
     --secondary-white-bgcolor: #F5F4FA;
@@ -15,7 +15,7 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; 
 */
-html {
+/* html {
     box-sizing: border-box;
 }
 
@@ -67,9 +67,9 @@ img {
 
 .list {
     list-style: none;
-}
+} */
 
-button {
+/* button {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
 
@@ -84,7 +84,7 @@ button {
     margin-right: auto;
 
     /* outline: 1px solid red; */
-}
+/*
 
 .section {
     padding-top: 94px;
@@ -107,7 +107,7 @@ button {
   }
 
 /* header */
-
+/*
 .page-header {
     border-bottom: 1px solid #ECECEC;
     padding-top: 24px;
@@ -138,27 +138,27 @@ button {
 
 .logo-accent {
     color: var(--accent-color);
-}
+}  */
 
-.nav-list {
+/* .nav-list {
     display: flex;
-}
+} */
 
-.nav-item:not(:last-child) {
+/* .nav-item:not(:last-child) {
     margin-right: 50px;
-}
-
+} */
+/* 
 .header-contacts-list {
     display: flex;
     margin-left: auto;
-}
+} */
 
-.header-contacts-item:not(:last-child) {
+/* .header-contacts-item:not(:last-child) {
     margin-right: 40px;
-}
+} */
 
-.nav-list-link,
-.header-contacts-list-link {
+/* .nav-list-link, */
+/* .header-contacts-list-link {
     color: var(--black-text-color);
 
     font-weight: 500;
@@ -167,41 +167,41 @@ button {
     letter-spacing: 0.02em;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+} */
+/* 
 .nav-list-link {
     position: relative;
 
     padding-top: 32px;
     padding-bottom: 32px;
-}
+} */
 
-.header-contacts-list-link {
+/* .header-contacts-list-link {
     color: var(--primary-text-color);
     display: flex;
     align-items: center;
-}
+} */
 
-.contact-icon {
+/* .contact-icon {
     margin-right: 10px;
     fill: currentColor;
-}
+} */
 
-
+/* 
 .nav-list-link:hover,
-.nav-list-link:focus,
-.header-contacts-list-link:hover,
+.nav-list-link:focus, */
+/* .header-contacts-list-link:hover,
 .header-contacts-list-link:focus {
     color: var(--accent-color);
-}
+} */
 
-.current {
+/* .current {
     color: var(--accent-color);
 
-}
+} */
 
 
-.nav-list-link::after {
+/* .nav-list-link::after {
     content: '';
 
     position: absolute;
@@ -216,8 +216,8 @@ button {
 
     transform: scaleX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+} */
+/* 
 .nav-list-link:hover::after,
 .nav-list-link:focus::after {
     transform: scaleX(1);
@@ -225,7 +225,7 @@ button {
 
 .current::after {
     transform: scaleX(1);
-}
+} */
 
 /* main page */
 

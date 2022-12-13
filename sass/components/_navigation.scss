@@ -1,0 +1,63 @@
+.navigation {
+    @extend %list;
+    display: flex;
+}
+
+.navigation__item {
+    &:not(:last-child){
+        margin-right: 50px;
+    }
+}
+
+.navigation__link {
+    @extend %link;
+    color: $text-black;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color $time-standard $cubic-standard;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+    }
+
+    &--current {
+        color: $accent;
+    }
+
+    &::after {
+        content: '';
+    
+        position: absolute;
+    
+        display: block;
+        height: 4px;
+        width: 100%;
+        background-color: $accent;
+        border-radius: 2px;
+        bottom: 0;
+        left: 0;
+    
+        transform: scaleX(0);
+        transition: transform $time-standard $cubic-standard;
+}
+
+&--current::after {
+    transform: scaleX(1);
+}
+
+    &:hover::after,
+    &:focus::after {
+        transform: scaleX(1);
+}
+}
+

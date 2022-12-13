@@ -13,36 +13,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- Header with navigation -->
     <header class="page-header">
         <div class="container">
-            <nav class="page-navigation">
+            <nav class="page-header__navigation">
                 <!-- logo -->
-                <a href="./index.html" class="logo link"><span class="logo-accent">Web</span>Studio</a>
+                <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
                 <!-- main navigation -->
-                <ul class="nav-list list">
-                    <li class="nav-item"><a href="./index.html" class="nav-list-link link current">Студія</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="nav-list-link link">Портфоліо</a></li>
-                    <li class="nav-item"><a href="./contacts.html" class="nav-list-link link">Контакти</a></li>
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+                    <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
                 </ul>
             </nav>
             <!-- contacts links -->
-            <ul class="header-contacts-list list">
-                <li class="header-contacts-item">
-                    <a href="mailto:info@devstudio.com" class="header-contacts-list-link link">
-                        <svg class="contact-icon" width="16px" height="16px">
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg class="contacts__icon" width="16px" height="16px">
                             <use href="./img/sprite.svg#icon-mail"></use>
                         </svg>
                         <span>info@devstudio.com</span>
                     </a>
                 </li>
-                <li class="header-contacts-item">
-                    <a href="tel:+380961111111" class="header-contacts-list-link link">
-                        <svg class="contact-icon" width="16px" height="16px">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg class="contacts__icon" width="16px" height="16px">
                             <use href="./img/sprite.svg#icon-smartphone"></use>
                         </svg>
                         <span>+38 096 111 11 11</span>
@@ -299,9 +299,9 @@
     <footer>
         <div class="container">
             <div class="footer-wrapper">
-                <div class="footer-nav">
+                <div class="footer__navigation">
                     <!-- logo -->
-                    <a href="./index.html" class="footer-logo logo link"><span class="logo-accent">Web</span>Studio</a>
+                    <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
                     <!-- addresses -->
                     <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
                     <ul class="footer-contacts-list list">
