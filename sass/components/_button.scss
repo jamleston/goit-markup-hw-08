@@ -1,0 +1,24 @@
+.btn {
+    color: $text-white;
+    background-color: $accent;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 10px 24px;
+    margin-top: 30px;
+
+    transition: color $time-standard $cubic-standard,
+                background-color $time-standard $cubic-standard;
+
+    &:hover,
+    &:focus {
+        color: $accent;
+        background-color: $text-white;
+    }
+}

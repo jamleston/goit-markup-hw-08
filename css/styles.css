@@ -231,7 +231,7 @@ img {
 
 /* banner section */
 
-.banner {
+/* .banner {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url(../img/banner.jpg);
     background-size: cover;
@@ -291,28 +291,28 @@ img {
 .banner-btn:focus {
     color: var(--accent-color);
     background-color: var(--white-text-color);
-}
+} */
 
 /* pluses section */
 
-.pluses {
+/* .pluses {
     padding-bottom: 0;
 }
 
 
 .pluses-list {
     display: flex;
-}
+} */
 
-.pluses-item {
+/* .pluses-item {
     width: 270px;
 }
 
 .pluses-item:not(:last-child) {
     margin-right: 30px;
-}
+} */
 
-.bg-svg {
+/* .bg-svg {
     background-color: var(--secondary-white-bgcolor);
     width: 270px;
     height: 120px;
@@ -322,22 +322,22 @@ img {
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-}
+} */
 
-.pluses-list-title {
+/* .pluses-list-title {
     font-size: 14px;
     line-height: 1.14;
 
     margin-bottom: 10px;
-}
+} */
 
-.pluses-list-description {
+/* .pluses-list-description {
     font-size: 14px;
     line-height: 1.71;
-}
+} */
 
 /* what we do / service */
-
+/* 
 .service-title {
     font-size: 36px;
     line-height: 1.17;
@@ -345,8 +345,8 @@ img {
     text-align: center;
 
     margin-bottom: 50px;
-}
-
+} */
+/* 
 .img-list {
     display: flex;
 }
@@ -376,11 +376,11 @@ img {
     color: var(--white-text-color);
     font-size: 14px;
     line-height: 1.14;
-}
+} */
 
 /* team section */
 
-.team {
+/* .team {
     background-color: var(--secondary-white-bgcolor);
 }
 
@@ -391,13 +391,13 @@ img {
     text-align: center;
 
     margin-bottom: 50px;
-}
-
+} */
+/* 
 .team-list {
     display: flex;
-}
+} */
 
-.team-list-item {
+/* .team-list-item {
     background-color: var(--main-white-bgcolor);
 
     padding-bottom: 30px;
@@ -405,12 +405,12 @@ img {
     width: 270px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.team-list-item:not(:last-child) {
+/* .team-list-item:not(:last-child) {
     margin-right: 30px;
-}
-
+} */
+/* 
 .team-list-title {
     font-weight: 500;
     font-size: 16px;
@@ -420,22 +420,22 @@ img {
 
     margin-top: 30px;
     margin-bottom: 10px;
-}
+} */
 
-.team-list-description {
+/* .team-list-description {
     font-size: 16px;
     line-height: 1.19;
 
     text-align: center;
     margin-bottom: 16px;
-}
-
+} */
+/* 
 .team-socmedias-list {
     display: flex;
     justify-content: center;
-}
+} */
 
-.team-socmedias-item:not(:last-child) {
+/* .team-socmedias-item:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -462,7 +462,7 @@ img {
 .team-socmedias-link:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
-}
+} */
 
 /* clients */
 
