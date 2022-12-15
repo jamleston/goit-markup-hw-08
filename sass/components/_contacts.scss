@@ -11,6 +11,15 @@
         margin-right: 10px;
         fill: currentColor;
     }
+
+    .footer & {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer &__item {
+        margin-top: 9px;
+    }
 }
 
 .contacts__link {
@@ -30,5 +39,12 @@
     &:hover,
     &:focus {
         color: $accent;
+    }
+
+    .footer & {
+        color: $footer-link;
+
+        font-size: 14px;
+        line-height: 1.71;
     }
 }

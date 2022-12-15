@@ -30,4 +30,19 @@
         color: $text-white;
         background-color: $accent;
     }
+
+    .footer & {
+        justify-content: left;
+    }
+
+    .footer &__link {
+        color: $text-white;
+        background-color: $footer-socmedias;
+    }
+
+    .footer &__link:hover,
+    .footer &__link:focus {
+        color: $text-white;
+        background-color: $accent;
+    }
 }

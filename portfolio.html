@@ -13,176 +13,180 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
             integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+            <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <!-- Header with navigation -->
     <header class="page-header">
         <div class="container">
-            <nav class="page-navigation">
+            <nav class="page-header__navigation">
                 <!-- logo -->
-                <a href="./index.html" class="logo link"><span class="logo-accent">Web</span>Studio</a>
+                <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
                 <!-- main navigation -->
-                <ul class="nav-list list">
-                    <li class="nav-item"><a href="./index.html" class="nav-list-link link">Студія</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="nav-list-link link current">Портфоліо</a></li>
-                    <li class="nav-item"><a href="./contacts.html" class="nav-list-link link">Контакти</a></li>
+                <ul class="navigation">
+                    <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="navigation__link  navigation__link--current">Портфоліо</a></li>
+                    <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
                 </ul>
             </nav>
             <!-- contacts links -->
-            <ul class="header-contacts-list list">
-                <li class="header-contacts-item">
-                    <a href="mailto:info@devstudio.com" class="header-contacts-list-link link">
-                        <svg class="contact-icon" width="16px" height="16px">
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg class="contacts__icon" width="16px" height="16px">
                             <use href="./img/sprite.svg#icon-mail"></use>
                         </svg>
-                        <span>info@devstudio.com</span></a></li>
-                <li class="header-contacts-item">
-                    <a href="tel:+380961111111" class="header-contacts-list-link link">
-                        <svg class="contact-icon" width="16px" height="16px">
+                        <span>info@devstudio.com</span>
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg class="contacts__icon" width="16px" height="16px">
                             <use href="./img/sprite.svg#icon-smartphone"></use>
                         </svg>
-                        <span>+38 096 111 11 11</span></a></li>
+                        <span>+38 096 111 11 11</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
     <!-- filter + gallery -->
     <main>
-        <section class="examples section">
+        <section class="portfolio">
             <div class="container">
-                <h1 class="examples-title visually-hidden">Приклади робіт</h1>
-                <ul class="filter list">
-                    <li class="filter-item"><button type="button" class="filter-btn">Усі</button></li>
-                    <li class="filter-item"><button type="button" class="filter-btn">Веб-сайти</button></li>
-                    <li class="filter-item"><button type="button" class="filter-btn">Додатки</button></li>
-                    <li class="filter-item"><button type="button" class="filter-btn">Дизайн</button></li>
-                    <li class="filter-item"><button type="button" class="filter-btn">Маркетинг</button></li>
+                <h1 class="portfolio__title">Приклади робіт</h1>
+                <ul class="filter">
+                    <li class="filter__item"><button type="button" class="btn filter__btn">Усі</button></li>
+                    <li class="filter__item"><button type="button" class="btn filter__btn">Веб-сайти</button></li>
+                    <li class="filter__item"><button type="button" class="btn filter__btn">Додатки</button></li>
+                    <li class="filter__item"><button type="button" class="btn filter__btn">Дизайн</button></li>
+                    <li class="filter__item"><button type="button" class="btn filter__btn">Маркетинг</button></li>
                 </ul>
-                <ul class="gallery list">
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                <ul class="gallery">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery1.jpg" alt="Технокряк" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Технокряк</h3>
-                                <p class="gallery-item-description">Веб-сайт</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Технокряк</h3>
+                                <p class="gallery__text-dscr">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery2.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Постер New Orlean vs Golden Star</h3>
-                                <p class="gallery-item-description">Дизайн</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Постер New Orlean vs Golden Star</h3>
+                                <p class="gallery__text-dscr">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery3.jpg" alt="Ресторан Seafood" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Ресторан Seafood</h3>
-                                <p class="gallery-item-description">Додаток</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Ресторан Seafood</h3>
+                                <p class="gallery__text-dscr">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery4.jpg" alt="Проєкт Prime" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Проєкт Prime</h3>
-                                <p class="gallery-item-description">Маркетинг</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Проєкт Prime</h3>
+                                <p class="gallery__text-dscr">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery5.jpg" alt="Проєкт Boxes" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Проєкт Boxes</h3>
-                                <p class="gallery-item-description">Додаток</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Проєкт Boxes</h3>
+                                <p class="gallery__text-dscr">Додаток</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery6.jpg" alt="Inspiration has no Borders" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Inspiration has no Borders</h3>
-                                <p class="gallery-item-description">Веб-сайт</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Inspiration has no Borders</h3>
+                                <p class="gallery__text-dscr">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery7.jpg" alt="Видання Limited Edition" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Видання Limited Edition</h3>
-                                <p class="gallery-item-description">Дизайн</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Видання Limited Edition</h3>
+                                <p class="gallery__text-dscr">Дизайн</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery8.jpg" alt="Проєкт LAB" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Проєкт LAB</h3>
-                                <p class="gallery-item-description">Маркетинг</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Проєкт LAB</h3>
+                                <p class="gallery__text-dscr">Маркетинг</p>
                             </div>
                         </a>
                     </li>
-                    <li class="gallery-item">
-                        <a href="" class="link">
-                            <div class="example-thumb">
+                    <li class="gallery__item">
+                        <a href="" class="gallery__link">
+                            <div class="gallery__thumb">
                                 <img src="./img/gallery9.jpg" alt="Growing Business" width="370">
-                                <div class="example-overlay">
-                                    <p class="overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <div class="gallery__overlay">
+                                    <p class="gallery__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="gallery-item-wrap">
-                                <h3 class="gallery-item-title">Growing Business</h3>
-                                <p class="gallery-item-description">Додаток</p>
+                            <div class="gallery__text-wrap">
+                                <h3 class="gallery__text-title">Growing Business</h3>
+                                <p class="gallery__text-dscr">Додаток</p>
                             </div>
                         </a>
                     </li>
@@ -191,39 +195,39 @@
         </section>
     </main>
     <!-- footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-nav">
+            <div class="footer__wrapper">
+                <div class="footer__navigation">
                     <!-- logo -->
-                    <a href="./index.html" class="footer-logo logo link"><span class="logo-accent">Web</span>Studio</a>
+                    <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
                     <!-- addresses -->
-                    <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
-                    <ul class="footer-contacts-list list">
-                        <li class="footer-contacts-item"><a href="mailto:info@devstudio.com" class="link footer-contacts-list-link">info@devstudio.com</a></li>
-                        <li class="footer-contacts-item"><a href="tel:+380961111111" class="link footer-contacts-list-link">+38 096 111 11 11</a></li>
+                    <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
+                    <ul class="contacts">
+                        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a></li>
+                        <li class="contacts__item"><a href="tel:+380961111111" class="contacts__link">+38 096 111 11 11</a></li>
                     </ul>
                 </div>
                 <div class="join-us">
-                    <h3 class="join-us-title">ПРИЄДНУЙТЕСЬ</h3>
-                    <ul class="footer-socmedias-list list">
-                        <li class="footer-socmedias-item"><a href=""  class="footer-socmedias-link">
-                            <svg class="footer-socmedias-icon" width="20px" height="20px">
+                    <h3 class="join-us__title">ПРИЄДНУЙТЕСЬ</h3>
+                    <ul class="socmedias">
+                        <li class="socmedias__item"><a href=""  class="socmedias__link">
+                            <svg class="socmedias__icon" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a></li>
-                        <li class="footer-socmedias-item"><a href=""  class="footer-socmedias-link">
-                            <svg class="footer-socmedias-icon" width="20px" height="20px">
+                        <li class="socmedias__item"><a href=""  class="socmedias__link">
+                            <svg class="socmedias__icon" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a></li>
-                        <li class="footer-socmedias-item"><a href=""  class="footer-socmedias-link">
-                            <svg class="footer-socmedias-icon" width="20px" height="20px">
+                        <li class="socmedias__item"><a href=""  class="socmedias__link">
+                            <svg class="socmedias__icon" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a></li>
-                        <li class="footer-socmedias-item"><a href=""  class="footer-socmedias-link">
-                            <svg class="footer-socmedias-icon" width="20px" height="20px">
+                        <li class="socmedias__item"><a href=""  class="socmedias__link">
+                            <svg class="socmedias__icon" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-linkedin"></use>
                             </svg>
                         </a></li>

@@ -1,0 +1,13 @@
+.join-us {
+    margin-left: 70px;
+    margin-top: 12px;
+
+    &__title {
+        color: $text-white;
+
+        font-size: 14px;
+        line-height: 16px;
+    
+        margin-bottom: 20px;
+    }
+}

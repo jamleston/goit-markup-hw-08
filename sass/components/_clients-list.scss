@@ -1,0 +1,34 @@
+.clients-list {
+    @extend %list;
+    display: flex;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 92px;
+        border: 1px solid $socmedias-icon-color;
+        border-radius: 4px;
+
+        color: $socmedias-icon-color;
+
+        transition: color $time-standard $cubic-standard,
+                    border-color $time-standard $cubic-standard;
+    }
+
+    &__icon  {
+        fill: currentColor;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent;
+        border-color: $accent;
+    }
+
+}
