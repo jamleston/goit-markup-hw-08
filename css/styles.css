@@ -722,7 +722,7 @@ img {
     background-color: var(--accent-color);
 } */
 
-.footer-form {
+/* .footer-form {
     margin-top: 12px;
     margin-right: 0;
     margin-left: auto;
@@ -801,11 +801,11 @@ img {
 .footer-form-btn:hover,
 .footer-form-btn:focus {
     transform: scale(1.05);
-}
-
+} */
+/* 
 .footer-btn-icon {
     margin-left: 10px;
-}
+} */
 
 
 

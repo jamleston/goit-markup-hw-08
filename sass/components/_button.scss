@@ -9,7 +9,7 @@
     text-align: center;
 
     border-radius: 4px;
-    border-color: transparent;
+    border: none;
     padding: 10px 24px;
     margin-top: 30px;
 
@@ -43,4 +43,40 @@
         background-color: $accent;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+
+    &.footer__btn {
+        padding: 10px 28px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+
+        transform: scale(1);
+        transition: transform $time-standard $cubic-standard;
+    }
+
+    &.footer__btn:hover,
+    &.footer__btn:focus {
+        transform: scale(1.05);
+        color: $text-white;
+        background-color: $accent;
+    }
+
+    &.modal__btn {
+        margin-top: 0px;
+        padding: 10px 52px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        transform: scale(1);
+        transition: transform $time-standard $cubic-standard;
+    }
+
+    &.modal__btn:hover,
+    &.modal__btn:focus {
+        transform: scale(1.1);
+        color: $text-white;
+        background-color: $accent;
+    }
+
 }

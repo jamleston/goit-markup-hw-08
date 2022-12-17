@@ -1,0 +1,58 @@
+.checkbox {
+    display: flex;
+    margin-bottom: 30px;
+
+    &__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    &__label {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    & a {
+        color: $accent;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 15px;
+    
+        border: 2px solid $text-black;
+        border-radius: 2px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+    }
+
+    &__icon svg {
+        fill: transparent;
+    }
+
+    &__input:checked +label>span {
+        border: none;
+        background-color: $accent;
+    }
+
+    &__input:checked +label>span svg {
+        fill: $text-white;
+    }
+}
