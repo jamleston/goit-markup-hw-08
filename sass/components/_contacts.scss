@@ -1,50 +1,5 @@
-.contacts {
-    @extend %list;
-    display: flex;
-    margin-left: auto;
-
-    &__item:not(:last-child) {
-        margin-right: 40px;
-    }
-
-    &__icon {
-        margin-right: 10px;
-        fill: currentColor;
-    }
-
-    .footer & {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer &__item {
-        margin-top: 9px;
-    }
-}
-
-.contacts__link {
-    @extend %link;
-    color: $text-main;
-    
-    display: flex;
-    align-items: center;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color $time-standard $cubic-standard;
-
-    &:hover,
-    &:focus {
-        color: $accent;
-    }
-
-    .footer & {
-        color: $footer-link;
-
-        font-size: 14px;
-        line-height: 1.71;
+@media (max-width: 767px) {
+    .contacts {
+        display: none; 
     }
 }

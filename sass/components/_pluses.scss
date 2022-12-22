@@ -1,8 +1,0 @@
-.pluses {
-    @extend %section;
-    padding-bottom: 0;
-
-    &__title {
-        @extend %visually-hidden
-    }
-}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,17 +20,23 @@
     <!-- Header with navigation -->
     <header class="page-header">
         <div class="container">
-            <nav class="page-header__navigation">
-                <!-- logo -->
+            <div class="page-header__container">
                 <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
-                <!-- main navigation -->
+                <button class="menu-btn js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu" >
+                        <svg width="40" height="40" class="icon-menu">
+                            <use  href="./img/sprite.svg#icon-menu"></use>
+                        </svg>
+                </button>
+            </div>
+            
+            <nav class="page-header__navigation">
                 <ul class="navigation">
                     <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
                     <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
                 </ul>
             </nav>
-            <!-- contacts links -->
             <ul class="contacts">
                 <li class="contacts__item">
                     <a href="mailto:info@devstudio.com" class="contacts__link">
@@ -295,6 +301,39 @@
             </div>
         </section>
     </main>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-btn js-close-menu">
+            <svg width="40" height="40" class="icon-menu-close">
+                <use  href="./img/sprite.svg#icon-menu-close"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <ul class="navigation">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
+                <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+                <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
+            </ul>
+            <ul class="contacts">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link">
+                        <svg class="contacts__icon" width="16px" height="16px">
+                            <use href="./img/sprite.svg#icon-mail"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                    </a>
+                </li>
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link">
+                        <svg class="contacts__icon" width="16px" height="16px">
+                            <use href="./img/sprite.svg#icon-smartphone"></use>
+                        </svg>
+                        <span>+38 096 111 11 11</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
     <!-- footer -->
     <footer class="footer">
         <div class="container">
@@ -403,6 +442,7 @@
             </form>
         </div>
     </div>
+    <script src="./scripts/mobile-menu.js" ></script>
     <script src="./scripts/modal.js"></script>
 </body>
 </html>
