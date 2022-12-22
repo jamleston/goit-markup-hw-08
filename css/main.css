@@ -86,18 +86,10 @@ button {
   }
   .page-header__container {
     display: flex;
+    justify-content: space-between;
     align-content: center;
   }
 }
-@media (max-width: 767px) {
-  .navigation {
-    display: none;
-  }
-}
-.menu-container .navigation {
-  margin-top: 0;
-}
-
 .navigation__link {
   color: #212121;
   font-weight: 500;
@@ -125,6 +117,14 @@ button {
   .navigation__item:not(:last-child) {
     margin-bottom: 32px;
   }
+}
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+.menu-container .navigation {
+  margin-top: 0;
 }
 
 .logo {
@@ -166,7 +166,7 @@ button {
     fill: currentColor;
   }
   .menu-btn.js-close-menu {
-    color: black;
+    color: #212121;
   }
   .menu-btn .icon-menu-close {
     fill: currentColor;
