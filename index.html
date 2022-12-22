@@ -17,7 +17,6 @@
 </head>
 
 <body>
-    <!-- Header with navigation -->
     <header class="page-header">
         <div class="container">
             <div class="page-header__container">
@@ -58,17 +57,14 @@
         </div>
     </header>
     <main>
-        <!-- banner -->
         <section class="banner">
             <div class="container">
                 <h1 class="banner__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <button type="button" class="btn banner__btn" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-        <!-- pluses -->
         <section class="pluses">
             <div class="container">
-                <!-- hide h2 -->
                 <h2 class="pluses__title">Чому саме ми?</h2>
                 <ul class="pluses-list">
                     <li class="pluses-list__item">
@@ -113,10 +109,10 @@
                 </ul>
             </div>
         </section>
-        <section class="service">
+        <!-- <section class="service">
             <div class="container">
                 <h2 class="service__title">Чим ми займаємося</h2>
-                <!-- photos -->
+                
                 <ul class="img-list">
                     <li class="img-list__item">
                         <div class="img-list__wrap">
@@ -145,11 +141,10 @@
                 </ul>
             </div>
         </section>
-        <!-- team -->
         <section class="team">
             <div class="container">
                 <h2 class="team__title">Наша команда</h2>
-                <!-- photos -->
+                
                 <ul class="team-list">
                     <li class="team-list__item">
                         <img src="./img/team1.jpg" alt="Ігор Дем'яненко" width="270">
@@ -262,7 +257,6 @@
                 </ul>
             </div>
         </section>
-        <!-- clients section -->
         <section class="clients">
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
@@ -299,12 +293,12 @@
                     </a></li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-btn js-close-menu">
             <svg width="40" height="40" class="icon-menu-close">
-                <use  href="./img/sprite.svg#icon-menu-close"></use>
+                <use  href="./img/sprite.svg#icon-close-menu"></use>
             </svg>
         </button>
         <div class="mobile-menu">
@@ -313,35 +307,41 @@
                 <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
                 <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
             </ul>
-            <ul class="contacts">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class="contacts__link">
-                        <svg class="contacts__icon" width="16px" height="16px">
-                            <use href="./img/sprite.svg#icon-mail"></use>
-                        </svg>
-                        <span>info@devstudio.com</span>
-                    </a>
-                </li>
-                <li class="contacts__item">
-                    <a href="tel:+380961111111" class="contacts__link">
-                        <svg class="contacts__icon" width="16px" height="16px">
-                            <use href="./img/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        <span>+38 096 111 11 11</span>
-                    </a>
-                </li>
-            </ul>
+            <div class="mobile-menu__wrapper">
+                <ul class="contacts">
+                    <li class="contacts__item">
+                        <a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="contacts__icon" width="16px" height="16px">
+                                <use href="./img/sprite.svg#icon-mail"></use>
+                            </svg>
+                            <span>info@devstudio.com</span>
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="tel:+380961111111" class="contacts__link tel">
+                            <svg class="contacts__icon" width="16px" height="16px">
+                                <use href="./img/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mobile-socmedias">
+                    <li class="mobile-socmedias__item"><a href="" class="mobile-socmedias__link">Instagram</a></li>
+                    <li class="mobile-socmedias__item"><a href="" class="mobile-socmedias__link">Twitter</a></li>
+                    <li class="mobile-socmedias__item"><a href="" class="mobile-socmedias__link">Facebook</a></li>
+                    <li class="mobile-socmedias__item"><a href="" class="mobile-socmedias__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
         
     </div>
-    <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__navigation">
-                    <!-- logo -->
                     <a href="./index.html" class="logo"><span class="logo--accent">Web</span>Studio</a>
-                    <!-- addresses -->
+                    
                     <address class="footer__address">м. Київ, пр-т Лесі Українки, 26</address>
                     <ul class="contacts">
                         <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__link">info@devstudio.com</a></li>
@@ -390,7 +390,6 @@
             </div>
         </div>
     </footer>
-    <!-- modal -->
     <div class="modal__backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
@@ -441,7 +440,13 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./scripts/mobile-menu.js" ></script>
     <script src="./scripts/modal.js"></script>
 </body>

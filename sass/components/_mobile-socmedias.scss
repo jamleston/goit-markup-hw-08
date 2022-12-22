@@ -1,0 +1,28 @@
+.mobile-socmedias {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    &__item {
+        padding-right: 10px;
+    }
+
+    &__item:not(:first-child) {
+        padding-left: 10px;
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    &__link {
+        @extend %link;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+        color: $accent;
+    }
+}

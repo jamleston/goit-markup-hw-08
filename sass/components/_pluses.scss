@@ -1,0 +1,14 @@
+
+@media (max-width: 767px) {
+    .pluses {
+        @include section-mobile();
+   }
+}
+
+.pluses {
+    @extend %section;
+
+    &__title {
+        @extend %visually-hidden
+    }
+}

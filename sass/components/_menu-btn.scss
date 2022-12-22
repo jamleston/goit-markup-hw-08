@@ -1,8 +1,7 @@
 @media screen and (max-width: 767px) {
     .menu-btn {
-        display: inline-block;
         margin: 0 0 0 auto;
-        border: 1px solid black;
+        border: none;
         background-color: transparent;
         color: $accent;
         min-height: 40px;
@@ -10,7 +9,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        outline: none;
 
         &.js-open-menu {
             color: $text-black;
@@ -24,7 +22,7 @@
             color: $text-black;
         }
 
-        .icon-menu-close {
+        .icon-close-menu {
             fill: currentColor;
         }
     }
