@@ -1,0 +1,18 @@
+.clients {
+    @include section-mobile();
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.17;
+    
+        text-align: center;
+    
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .clients {
+        @include section();
+    } 
+}

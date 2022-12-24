@@ -1,0 +1,42 @@
+.clients-list {
+    @extend %list;
+    display: flex;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92px;
+        border: 1px solid $socmedias-icon-color;
+        border-radius: 4px;
+
+        color: $socmedias-icon-color;
+
+        transition: color $time-standard $cubic-standard,
+                    border-color $time-standard $cubic-standard;
+    }
+
+    &__icon  {
+        fill: currentColor;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent;
+        border-color: $accent;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .clients-list {
+        margin: -15px;
+        flex-wrap: wrap;
+
+        &__item {
+            width: calc((100% - 4 * 15px) / 2);
+            margin: 15px;
+        }
+        
+    }
+}

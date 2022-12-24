@@ -57,6 +57,12 @@
         transition: transform $time-standard $cubic-standard;
     }
 
+    @media (max-width: 1199px) {
+        &.footer__btn {
+            margin-top: 20px;
+        }
+    }
+
     &.footer__btn:hover,
     &.footer__btn:focus {
         transform: scale(1.05);

@@ -9,7 +9,7 @@
     padding-left: 0;
 }
 
-%visually-hidden {
+@mixin visually-hidden() {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -23,7 +23,7 @@
     overflow: hidden;
   }
 
-%section {
+@mixin section() {
     padding-top: 94px;
     padding-bottom: 94px;
 }

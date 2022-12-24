@@ -1,0 +1,14 @@
+.join-us {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &__title {
+        color: $text-white;
+
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    
+        margin-bottom: 20px;
+    }
+}

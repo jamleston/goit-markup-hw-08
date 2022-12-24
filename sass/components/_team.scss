@@ -1,0 +1,20 @@
+.team {
+    @include section-mobile();
+    background-color: $bg-sec-white;
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.17;
+
+        text-align: center;
+
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .team {
+        @include section();
+    }
+    
+}

@@ -1,14 +1,14 @@
-
-@media (max-width: 767px) {
-    .pluses {
-        @include section-mobile();
-   }
-}
-
 .pluses {
-    @extend %section;
+    @include section-mobile();
 
     &__title {
-        @extend %visually-hidden
+        @include visually-hidden();
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .pluses {
+        @include section();
     }
 }
