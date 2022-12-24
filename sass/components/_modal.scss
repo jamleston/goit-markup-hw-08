@@ -1,0 +1,129 @@
+.modal__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: $backdrop;
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+    transition: opacity $time-standard $cubic-standard;
+
+    &.is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: $bg-main-white;
+    border-radius: 4px;
+    width: 95%;
+    padding: 40px;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $time-standard $cubic-standard;
+
+    .modal__backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    @media (min-width: 768px) {
+        & {
+            max-width: 450px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    
+        margin-bottom: 30px;
+    }
+
+    &__input {
+        position: relative;
+        margin-bottom: 28px;
+    }
+
+    
+
+    &__label {
+        position: absolute;
+        display: block;
+    
+        top: -40%;
+        left: 0%;
+    
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: $text-main;
+    }
+
+    &__icon {
+        position: absolute;
+
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        display: inline-block;
+
+        fill: $text-black;
+
+        transition: fill $time-standard $cubic-standard;
+    }
+
+    &__center-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center; 
+        align-items: center;
+    }
+
+
+}
+
+.modal__field {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 40px;
+    outline: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: $text-black;
+
+    transition: border $time-standard $cubic-standard;
+
+
+    &:focus-within {
+    border-color: $accent;
+    }
+
+    &:focus-within ~ .modal__icon {
+        fill: $accent;
+    }
+}
+
+.textarea {
+    & .modal__field {
+        resize: none;
+        padding: 15px;
+        height: 120px;
+        width: 100%;
+    }
+
+    & .modal__label {
+        top: -15%;
+    }
+}

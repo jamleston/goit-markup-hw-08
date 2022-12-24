@@ -1,0 +1,28 @@
+.close-btn {
+    position: absolute;
+
+    right: 8px;
+    top: 8px;
+
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $bg-main-white;
+    fill: $logo-black; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: scale(1);
+    transition: transform $time-standard $cubic-standard,
+                fill $time-standard $cubic-standard;
+    
+    &:hover,
+    &:focus {
+        fill: $accent;
+
+        transform: scale(1.2);
+    }
+}
