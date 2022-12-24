@@ -1,36 +1,7 @@
 .contacts {
     @extend %list;
-    display: flex;
-    
-    .menu-container.is-open & {
-        display: flex;
-        margin-left: auto;
-    }
-
-    .menu-container & {
-        display: none;
-        flex-direction: column-reverse;
-    }
-
-    .menu-container &__item:first-child {
-        margin-bottom: 64px;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-    }
-
-    .menu-container &__item:last-child {
-        margin-bottom: 32px;
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
-        color: $accent;
-    }
-
-    .menu-container.is-open &__icon {
-        display: none;
+    .page-header & {
+        display: none; 
     }
 
     .footer & {
@@ -44,10 +15,7 @@
 
 .contacts__link {
     @extend %link;
-
-    .menu-container & {
-        color: $text-main;
-    }
+    color: $text-main;
 
     .menu-container &.tel {
         color: $accent;
@@ -65,8 +33,69 @@
     }
 }
 
-@media (max-width: 767px) {
-    .page-header .contacts {
-        display: none; 
+.menu-container {
+    & .contacts {
+        display: none;
+        flex-direction: column-reverse;
+    }
+
+    &.is-open .contacts {
+        display: flex;
+        margin-left: auto;
+    }
+
+    & .contacts__item:first-child {
+        margin-bottom: 64px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+    }
+
+    & .contacts__item:last-child {
+        margin-bottom: 32px;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: $accent;
+    }
+
+    &.is-open .contacts__icon {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-header .contacts{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 auto;
+
+        &__item:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &__link {
+            display: flex;
+            align-items: center;
+
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+
+            transition: color $time-standard $cubic-standard;
+        }
+
+        &__icon {
+            margin-right: 10px;
+            fill: currentColor;
+        }
+
+        &__link:hover,
+        &__link:focus {
+            color: $accent;
+        }
     }
 }

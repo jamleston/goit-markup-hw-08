@@ -1,0 +1,7 @@
+.portfolio {
+    @include section-mobile();
+
+    &__title {
+        @include visually-hidden();
+    }
+}

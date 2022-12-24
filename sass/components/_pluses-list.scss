@@ -1,19 +1,9 @@
 .pluses-list {
     @extend %list;
 
-    &__item {
-        width: 100%;
-    }
-
-    @media (max-width: 767px) {
-        &__item:not(:last-child) {
-            margin-bottom: 30px;
-        }
-    }
-
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
+    // &__item:not(:last-child) {
+    //     margin-right: 30px;
+    // }
 
     &__bg {
         background-color: $bg-sec-white;
@@ -33,15 +23,39 @@
 
         margin-bottom: 10px;
     }
-    
-    @media (max-width: 767px) {
-        &__title {
-            text-align: center;
-        }
-    }
 
     &__dscr {
         font-size: 14px;
         line-height: 1.71;
     }
+}
+
+@media (max-width: 767px) {
+    .pluses-list {
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }  
+}
+
+@media (min-width: 768px) {
+    .pluses-list {
+        display: flex;
+        margin: -15px;
+        flex-wrap: wrap;
+
+        &__item {
+            width: calc((100% - 4 * 15px) / 2);
+            margin: 15px;
+        }
+    }
+    
 }

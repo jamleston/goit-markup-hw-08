@@ -59,3 +59,18 @@
         border-color: $accent;
     }
 }
+
+@media (min-width: 768px) {
+    .footer-form {
+        margin-top: 60px;
+
+        &__field {
+            max-width: 450px;
+        }
+
+        &__label {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

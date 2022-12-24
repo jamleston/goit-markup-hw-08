@@ -1,18 +1,29 @@
 .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #ECECEC; 
+
+    position: relative;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
 }
 
-@media screen and (max-width: 767px) {
+@media (min-width: 768px) {
     .page-header {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        position: relative;
-
-        &__container {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        
+        & .container {
             display: flex;
-            justify-content: space-between;
-            align-content: center;
         }
-    }
-    
-} 
+
+        &__navigation {
+            display: flex;
+            align-items: center;
+        }
+        }
+}

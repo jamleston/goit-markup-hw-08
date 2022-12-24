@@ -24,8 +24,11 @@
         display: inline-block;
         margin-bottom: 20px;
     }
+}
 
-
-
-    
+@media (min-width: 768px) {
+    .page-header .logo {
+        margin-right: 87px;
+        margin-top: 5px;
+    }
 }
