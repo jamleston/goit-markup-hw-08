@@ -1,10 +1,6 @@
 .pluses-list {
     @extend %list;
 
-    // &__item:not(:last-child) {
-    //     margin-right: 30px;
-    // }
-
     &__bg {
         background-color: $bg-sec-white;
         width: 100%;
@@ -14,7 +10,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
     }
 
     &__title {
@@ -46,14 +41,9 @@
     }  
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
     .pluses-list {
-        display: flex; 
-    }
-}
-
-@media (max-width: 1199px) {
-    .pluses-list {
+        display: flex;
         margin: -15px;
         flex-wrap: wrap;
 
@@ -74,3 +64,4 @@
         }
     }
 }
+

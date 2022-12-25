@@ -395,7 +395,6 @@ button {
 }
 
 .banner {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner.jpg);
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
@@ -420,14 +419,26 @@ button {
 
 @media (max-width: 767px) {
   .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-tel.jpg);
     height: 400px;
     max-width: 480px;
   }
 }
+@media (max-width: 767px) and (min-device-pixel-ratio: 2), (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-tel@2x.jpg);
+  }
+}
 @media (min-width: 768px) {
   .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-tab.jpg);
     max-width: 768px;
     padding: 118px 0 118px 0;
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-tab@2x.jpg);
   }
 }
 @media (min-width: 1200px) {
@@ -436,7 +447,15 @@ button {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-desc.jpg);
   }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .banner .banner {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/banner-desc@2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
   .banner__title {
     font-size: 44px;
     line-height: 1.36;
@@ -540,7 +559,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 .pluses-list__title {
   font-size: 14px;
@@ -566,10 +584,6 @@ button {
 @media (min-width: 768px) {
   .pluses-list {
     display: flex;
-  }
-}
-@media (max-width: 1199px) {
-  .pluses-list {
     margin: -15px;
     flex-wrap: wrap;
   }
