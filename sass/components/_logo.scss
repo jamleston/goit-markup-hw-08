@@ -32,3 +32,10 @@
         margin-top: 5px;
     }
 }
+
+@media (min-width: 1200px) {
+    .page-header .logo {
+        margin-right: 92px;
+        margin-top: 0px;
+    }
+}

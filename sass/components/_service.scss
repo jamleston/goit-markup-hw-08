@@ -1,5 +1,4 @@
 .service {
-    @include section();
     display: none;
 
     &__title {
@@ -15,5 +14,7 @@
 @media (min-width: 1200px) {
     .service {
         display: block;
+        @include section();
+        padding-top: 0;
     }
 }

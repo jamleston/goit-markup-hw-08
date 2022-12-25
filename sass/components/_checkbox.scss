@@ -21,15 +21,17 @@
         align-items: center;
     }
 
-    &__text {
-        font-size: 14px;
-        line-height: 1.71;
-    }
-
-    @media (max-width: 767px) {
+    @media (max-width: 1199px) {
         &__text {
             font-size: 12px;
             line-height: 1.17;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        &__text {
+            font-size: 14px;
+            line-height: 1.71;
         }
     }
 

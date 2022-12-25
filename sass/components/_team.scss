@@ -15,6 +15,12 @@
 @media (min-width: 1200px) {
     .team {
         @include section();
+
+        &__title {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 1.17;
+        }
     }
     
 }

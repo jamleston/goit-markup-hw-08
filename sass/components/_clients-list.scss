@@ -53,3 +53,15 @@
         
     }
 }
+
+@media (min-width: 1200px) {
+    .clients-list {
+        margin: -15px;
+
+        &__item {
+            width: calc((100% - 12 * 15px) / 6);
+            margin: 15px;
+        }
+        
+    }
+}

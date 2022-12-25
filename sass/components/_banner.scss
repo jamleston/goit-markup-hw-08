@@ -42,3 +42,18 @@
         padding: 118px 0 118px 0;
     }
 }
+
+@media (min-width: 1200px) {
+    .banner {
+        height: 600px;
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        &__title {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 700px;
+        }
+    }
+}

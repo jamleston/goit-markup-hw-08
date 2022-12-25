@@ -39,6 +39,10 @@
     .navigation {
         display: flex;
 
+        &__item {
+            height: 100%;
+        }
+
         &__item:not(:last-child) {
             margin-right: 50px;
         }
@@ -49,7 +53,49 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
 
+        padding-top: 32px;
+        padding-bottom: 34px;
+
         position: relative;
+        
+        &::after {
+            content: '';
+        
+            position: absolute;
+        
+            display: block;
+            height: 4px;
+            width: 100%;
+            background-color: $accent;
+            border-radius: 2px;
+            bottom: 0;
+            left: 0;
+        
+            transform: scaleX(0);
+            transition: transform $time-standard $cubic-standard;
+        }    
+        
+        &--current::after {
+            transform: scaleX(1);
+        }
+        
+            &:hover::after,
+            &:focus::after {
+                transform: scaleX(1);
+        }
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .navigation__link {
+        padding-bottom: 32px;
+    }
+
+    .footer {
+        &__navigation {
+            width: 231px;
+        }
     }
 }
 

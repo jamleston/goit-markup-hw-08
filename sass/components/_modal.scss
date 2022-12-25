@@ -39,6 +39,11 @@
         }
     }
 
+    @media (min-width: 1200px) {
+        & {
+            max-width: 528px;
+        }
+    }
     &__title {
         font-size: 20px;
         line-height: 1.15;

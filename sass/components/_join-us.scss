@@ -1,20 +1,37 @@
 .join-us {
-    margin-top: 60px;
-    margin-bottom: 60px;
-
     &__title {
         color: $text-white;
 
         font-size: 14px;
         line-height: 16px;
-        text-align: center;
-    
+        
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .join-us {
+        margin-top: 60px;
     }
 }
 
 @media (min-width: 768px) {
     .join-us {
         margin-top: 5px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .join-us {
+        &__title {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .join-us {
+        margin-top: 15px;
+        margin-left: 70px;
     }
 }

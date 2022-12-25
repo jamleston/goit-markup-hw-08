@@ -9,3 +9,9 @@
         margin-right: 8px;
     }
 }
+
+@media (min-width: 768px) {
+    .filter {
+        justify-content: center;
+    }
+}

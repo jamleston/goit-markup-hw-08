@@ -48,7 +48,12 @@
 
 @media (min-width: 768px) {
     .pluses-list {
-        display: flex;
+        display: flex; 
+    }
+}
+
+@media (max-width: 1199px) {
+    .pluses-list {
         margin: -15px;
         flex-wrap: wrap;
 
@@ -57,5 +62,15 @@
             margin: 15px;
         }
     }
-    
+}
+
+@media (min-width: 1200px) {
+    .pluses-list {
+        margin: -15px;
+
+        &__item {
+            width: calc((100% - 8 * 15px) / 4);
+            margin: 15px;
+        }
+    }
 }
