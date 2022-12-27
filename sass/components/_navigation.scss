@@ -26,15 +26,6 @@
     }
 }
 
-.menu-container .navigation {
-    @extend %list;
-    margin: 0 0 35% 0;
-
-    &__item:not(:last-child) {
-        margin-bottom: 32px;
-    }
-}
-
 @media (min-width: 768px) {
     .navigation {
         display: flex;

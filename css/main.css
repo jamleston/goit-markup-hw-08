@@ -52,7 +52,7 @@ button {
   text-decoration: none;
 }
 
-.gallery, .filter, .clients-list, .socmedias, .team-list, .img-list, .pluses-list, .mobile-socmedias, .contacts, .menu-container .navigation, .navigation {
+.gallery, .filter, .clients-list, .socmedias, .team-list, .img-list, .pluses-list, .mobile-socmedias, .contacts, .navigation {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
@@ -124,13 +124,6 @@ button {
 }
 .navigation__link--current {
   color: #2196F3;
-}
-
-.menu-container .navigation {
-  margin: 0 0 35% 0;
-}
-.menu-container .navigation__item:not(:last-child) {
-  margin-bottom: 32px;
 }
 
 @media (min-width: 768px) {
@@ -358,19 +351,15 @@ button {
   .menu-container .navigation {
     display: none;
   }
+  .menu-container .navigation__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
   .menu-container.is-open .navigation {
     display: block;
   }
 }
-.mobile-menu__wrapper {
-  margin-top: auto;
-  margin-bottom: 0;
-}
-
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
+.menu-container .navigation {
+  margin: 0 0 35% 0;
 }
 
 .mobile-socmedias {
@@ -563,6 +552,7 @@ button {
 .pluses-list__title {
   font-size: 14px;
   line-height: 1.14;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 .pluses-list__dscr {
@@ -767,8 +757,8 @@ button {
   padding-bottom: 60px;
 }
 .clients__title {
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   margin-bottom: 30px;
 }
