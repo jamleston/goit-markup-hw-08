@@ -1138,7 +1138,7 @@ button {
 }
 @media (max-width: 767px) {
   .modal {
-    width: 350px;
+    max-width: 450px;
   }
 }
 @media (min-width: 768px) {
