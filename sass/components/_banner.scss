@@ -26,7 +26,7 @@
 
         text-align: center;
 
-        max-width: 360px;
+        
     }
 }
 
@@ -36,6 +36,10 @@
      url(../img/banner-tel.jpg);
         height: 400px;
         max-width: 480px;
+
+        &__title {
+            max-width: 360px;
+        }
     }
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -53,6 +57,10 @@
      url(../img/banner-tab.jpg);
         max-width: 768px;
         padding: 118px 0 118px 0;
+
+        &__title {
+            width: 360px;
+        }
     }
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),

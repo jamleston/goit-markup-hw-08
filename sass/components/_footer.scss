@@ -51,7 +51,6 @@
 
 @media (min-width: 1200px) {
     .footer {
-        @include section();
 
         &__wrapper {
             display: flex;
