@@ -23,7 +23,6 @@
 
     background-color: $bg-main-white;
     border-radius: 4px;
-    max-width: 450px;
     padding: 40px;
 
     transform: translate(-50%, -50%) scale(1);
@@ -31,6 +30,12 @@
 
     .modal__backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.5);
+    }
+
+    @media (max-width: 767px) {
+        & {
+            max-width: 450px;
+        }
     }
 
     @media (min-width: 768px) {
@@ -44,6 +49,7 @@
             max-width: 528px;
         }
     }
+
     &__title {
         font-size: 20px;
         line-height: 1.15;
